@@ -3,6 +3,10 @@ import React, { PropTypes } from 'react'
 import styles from './Highlighter.css'
 import * as Chunks from './utils.js'
 
+console.log("Running tests...")
+require('./utils-tests').Tests()
+console.log("All tests passed.")
+
 Highlighter.propTypes = {
   highlightClassName: PropTypes.string,
   searchWords: PropTypes.arrayOf(PropTypes.string).isRequired,
